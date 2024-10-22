@@ -1,0 +1,134 @@
+
+
+.titulo{
+    color: #51DEE9;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;} /* Titulo inicio de ventas*/
+
+.subtitulo{
+  color: #51DEE9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;} /* subtitulos en las interfaces*/
+   
+
+
+.acciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+   color: #51DEE9;}/* Diseño de olvidaste contraseña y crear cuenta*/
+
+   
+  
+ .desarrollado{
+  font-size: 16px ;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif}/* tamaño de letra del la empresa que desarrollo el software*/
+
+    /*redes sociales*/
+
+    .facebook-icon{
+    color: blue;
+    font-size: 35px;} 
+
+  .whatsapp-icon{
+    color: green;
+    font-size: 35px;}
+  
+
+  .instagram-icon{
+    color: rgba(215, 143, 215, 0.91);
+
+    font-size: 35px;} 
+
+  .bi-headset{
+
+   font-size: 35px;}   /* icono de diademas*/
+
+
+  .redes{
+    font-size: 17px ;
+    color: #000000;
+  font-family: Arial, Helvetica, sans-serifs;} /* color y tamaño de letra de redes sociales*/
+
+  
+/*Registro de usuarios*/
+  
+  .custom-input{
+   height: 35px; }/* tamaño de alto de cuadriculas*/
+   
+/*
+.icono-opci{
+  font-size: 100px; } /*icono de circulo aceptar terminos en registro de usuarios*/
+  
+ .btn-lg{
+  height: 45px; 
+  width: 150px;} /*Tamaño de botones en general*/
+  
+
+.bi-person{
+  font-size: 40px;} /*icono de usuario en perfil de usuario*/
+/*Menu principal*/
+
+.bi-menu{
+  font-size: 35px;  /*iconos de barra de navegación*/
+}
+
+.navbar-expand-md{
+  background-color: #AFEEEE;   /* color de fondo de la barra de navegación*/
+}
+.sesion{
+  font-size:20px; }/* tamaño de las opciones en la barra de navegación*/
+
+.Bienvenido{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif }/* tamano del titulo Bienvenido*/
+
+
+.search{ 
+  font-size: 20px;} /*icono de buscar*/
+
+.custom-search{
+  height: 40px;} /* barra de busqueda*/
+
+
+.nombres-categorias{
+color: #000000;
+font-size: 20};/* tamaño y color de letra del nombre de las categorias*/
+
+.ayuda{ font-size: 17px;}
+
+.soporte{
+  color: #000000;
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;}/* texto soporte tecnico*/
+
+.subtitu-menu{
+  font-size: 25px;
+font-family: Georgia, 'Times New Roman', Times, serif;}/* tamaño del bienvenidos en la barra de naegación*/
+
+.nav-item {
+ font-size: 30px; /* tamaño del menu desplegable*/
+}
+
+  
+/*en espera de revisar carrito de compra*/
+.product-price {
+  color: #b12704;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.carrito {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkbox{
+  height: 15px;
+  width: 15px;
+}
