@@ -20,7 +20,7 @@
 
             <div class="d-flex flex-column align-items-start">
                 <label for="categoria">Categoria</label>
-                <select class="form-select"  style="width: 640px; height: 35px;" name="categoria" id="categoria" required>
+                <select class="form-select"  style="width: 640px; height: 35px;" name="categoria" id="categoria" required>  <!-- el required se usa para que el campo sea obligatorio-->
                     <option selected></option>
                     <option value="1">Dulces</option>
                     <option value="2">Helados</option>
@@ -63,7 +63,7 @@
                     <option selected></option>
                     <option value="1">Disponible</option>
                     <option value="2">Agotado</option>
-                    <option value="2">Descontinuado</option>
+                    <option value="3">Descontinuado</option>
                 
                     
                 </select>
@@ -97,7 +97,7 @@
             <h3 class="soporte" style="margin-left: 8px;">Soporte técnico</h3>
           </div>
         </div>
-      </div>
+    </div>
 
       <!-- Codigo para direccionar boton de crear producto-->
     <script>

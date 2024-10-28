@@ -112,6 +112,8 @@
 
         <br>
         <br>
+        
+        <!--tabla que contiene los campos de productos y los registros ya hechos -->
         <div class="container"> 
             <table class="table">
                 <thead>
@@ -141,7 +143,7 @@
 
                             <td>
                                 <a class="btn text-white" style="background-color: #51DEE9; margin-bottom: 5px;"  href="editarProducto.php?id_prod=<?php echo $row['id_prod']; ?>">Editar</a><br>
-                                <a class="btn text-white" style="background-color: #51DEE9" href="eliminarProducto.php?id_prod=<?php echo $row['id_prod']; ?>" onclick="return confirm('¿Estás seguro de que quieres eliminar este producto?')">Borrar</a>  <!-- estructura del boton que elimina un producto-->
+                                <a class="btn text-white" style="background-color: #51DEE9" href="eliminarProducto.php?id_prod=<?php echo $row['id_prod']; ?>" onclick="return confirm('¿Estás seguro que quieres eliminar este producto?')">Borrar</a>  <!-- estructura del boton que elimina un producto-->
                             </td>
 
                             <td><?php echo $row["fecha_crea_prod"]?></td> 

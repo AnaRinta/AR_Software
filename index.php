@@ -21,10 +21,6 @@
             <h1 class="titulo "style="margin-left: 170px;">Inicio de sesión</h1>
             
         </div>
-    
-    
-        <br>
-        
 
         <br>
         <br>
@@ -55,7 +51,7 @@
                         <br>
                         <div class="d-flex justify-content-center">
                                     
-                            <a href="Recuperar_contraseña" class="acciones mb-0">¿Olvidaste contraseña?</a>
+                            <a href="http://localhost/AR_Software/contrase%C3%B1a.php" class="acciones mb-0">¿Olvidaste contraseña?</a>
                             <a href="Registrarse.php" class="acciones ms-4">Crear cuenta</a>
                                     
                         </div>
@@ -68,15 +64,9 @@
                         <div class="container text-center " style="margin-left: 15px;">
                             <button type="submit" class="btn btn-lg text-white" style="background-color: #51DEE9;">Iniciar sesión</button>
                         </div>
-                           
                     </div>
-                
-                
-                </div>  
-            
+                 </div>  
             </div> 
-
-        
         </form>
         
         <br>
@@ -142,7 +132,7 @@
 
         <br>
         <br>
-
+          <!-- codigo para activar el ojo de ocultar y mostrar contraseña-->
         <script>
            document.addEventListener('DOMContentLoaded', function () {
             const togglePassword = document.querySelector('#togglePassword');

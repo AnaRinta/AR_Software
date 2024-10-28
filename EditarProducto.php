@@ -31,6 +31,9 @@ if (isset($_GET['id_prod'])) {
 
        <br>
         <form action="actualizarProducto.php" method="POST">
+
+           <!-- Codigo del formulario donde se edita el producto-->
+
             <div class="container d-flex flex-column align-items-center">
                 <h2 class="subtitulo text-center">Actualizar Producto</h2>
                 <br>

@@ -17,9 +17,5 @@
 
         // Cerrar conexión
         $conexion->close();
-    } else {
-        echo "ID del producto no proporcionado";
-    }
-
-
+    } 
 ?>

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Verificar si la consulta se ejecutó correctamente
     if ($resultado) {
         // Verificar si hay resultados
-        if ($resultado->num_rows > 0) {
+        if ($resultado->num_rows > 0) { 
             echo "<h3>Resultados de la búsqueda</h3>";
             while ($row = $resultado->fetch_assoc()) {
                 // Formatear el precio de venta

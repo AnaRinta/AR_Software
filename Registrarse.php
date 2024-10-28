@@ -15,7 +15,7 @@
     
         <!-- como subtitulo sus dimensiones-->  
         <div class="container d-flex justify-content-sm-center align-items-center">
-         <h2 class="subtitulo"style="margin-left: 140px;">Regístrate</h2>
+         <h2 class="subtitulo"style="margin-left: 170px;">Regístrate</h2>
             
         </div>
         <br>
@@ -33,7 +33,7 @@
 
                     <!-- Formulario de registro -->
                     <div class="col-md-6">
-                        <input type="text" class="form-control custom-input" name="nombreCompleto" placeholder="Nombre y apellido" required>
+                        <input type="text" class="form-control custom-input" name="nombreCompleto" placeholder="Nombre y apellido" required>    <!-- el required se usa para que el campo sea obligatorio-->
                         <br>
                         
                         <!-- opciones seleccionables -->
@@ -77,10 +77,13 @@
             </div>
 
             <!-- Botones para guardar o cancelar -->
-            <div class="container d-flex align-items-center justify-content-center" style="margin-left: 280px;">
-                <button type="submit" class="btn btn-lg text-white" style="background-color: #51DEE9;">Guardar</button>
-                <button type="reset" class="btn btn-lg text-white ms-3" style="background-color: #51DEE9;" onclick="cancelar()">Cancelar</button>
+            <div class="container d-flex align-items-center justify-content-center" style="margin-right: 150px;">
+                <button type="submit" class="btn btn-lg text-white ms-4 ms-md-0" style="background-color: #51DEE9;">Guardar</button>
+                <button class="btn btn-lg text-white ms-md-4" style="background-color: #51DEE9;" onclick="cancelar()">Cancelar</button>
             </div>
+
+
+
         </form>
 
 
@@ -166,7 +169,7 @@
             });
         </script>
 
-        <!-- codigo para redireccionar cancelar-->
+        <!-- codigo para redireccionar el boton de cancelar-->
         
        
         <script>
@@ -181,16 +184,13 @@
         <script>
             function cambiarIcono(elemento) {
                 const icono = elemento.querySelector('.icono-opci');
-            
-            // Verificar si el icono es un círculo o un check
-            if (icono.classList.contains('bi-circle')) {
-                icono.classList.remove('bi-circle');
-                icono.classList.add('bi-check-circle');
-            } else {
-                icono.classList.remove('bi-check-circle');
-                icono.classList.add('bi-circle');
+                
+                // Alternar entre clases
+                icono.classList.toggle('bi-circle');
+                icono.classList.toggle('bi-check-circle');
             }
-            }
+        </script>
+
         </script> 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>        
