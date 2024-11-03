@@ -25,14 +25,14 @@
         
         <!-- Container que tiene en su contenido el logotipo de la empresa y la informacion a ingresar-->
         <form action="Registrop.php" method="POST">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-4"> <!-- se agregó el logotipo de la empresa -->
                         <img src="Imagen--/imagen 2.png" alt="logotipo rapimerca" style="margin-top: 60px; margin-left: 70px;" width="150px" height="150px" class="d-none d-lg-block">
                     </div>
 
                     <!-- Formulario de registro -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <input type="text" class="form-control custom-input" name="nombreCompleto" placeholder="Nombre y apellido" required>    <!-- el required se usa para que el campo sea obligatorio-->
                         <br>
                         
@@ -46,7 +46,7 @@
                        <br>
 
                         <label for="fechaNacimiento">Fecha de nacimiento</label>
-                        <input type="date" class="form-control custom-input" name="fechaNacimiento" required>
+                        <input type="date" class="form-control custom-input" name="fechaNacimiento" id="fechaNacimiento" required>
                         <br>
 
                         <input type="tel" class="form-control custom-input" name="celular" placeholder="Número de celular" required>
@@ -62,7 +62,8 @@
                             </button>
                         </div>
                         <br>
-
+                        <div id="passwordWarning" class="text-danger" style="display:none;">La contraseña debe tener al menos 10 caracteres.</div>
+                         <br>
                         <div class="d-flex justify-content-center align-items-center" style="margin-left: 5px;">
                             <input type="checkbox" name="aceptoTerminos" required>
                             <h6 class="acciones mb-0 ms-2">Acepto términos y condiciones</h6>
@@ -75,10 +76,11 @@
                     </div>
                 </div>
             </div>
+          
 
             <!-- Botones para guardar o cancelar -->
             <div class="container d-flex align-items-center justify-content-center" style="margin-right: 150px;">
-                <button type="submit" class="btn btn-lg text-white ms-4 ms-md-0" style="background-color: #51DEE9;">Guardar</button>
+                <button type="submit" class="btn btn-lg text-white ms-3 ms-md-0" style="background-color: #51DEE9;">Guardar</button>
                 <button class="btn btn-lg text-white ms-md-4" style="background-color: #51DEE9;" onclick="cancelar()">Cancelar</button>
             </div>
 
@@ -166,7 +168,17 @@
                 passwordIcon.classList.toggle('bi-eye');
                 passwordIcon.classList.toggle('bi-eye-slash');
             });
+
+            // Codigo para mostrar que la contraseña debe tener minimo 10 caracteres
+            password.addEventListener('input', function () {
+                if (password.value.length < 10) {
+                    passwordWarning.style.display = 'block'; // Mostrar aviso
+                } else {
+                    passwordWarning.style.display = 'none'; // Ocultar aviso
+                }
             });
+            });
+            
         </script>
 
         <!-- codigo para redireccionar el boton de cancelar-->
@@ -191,7 +203,7 @@
             }
         </script>
 
-        </script> 
+        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>        
     </body>     

@@ -73,6 +73,7 @@
                             <a class="text-black" href="#" onclick="eliminarProducto(${index})">
                                 <i class="bi bi-trash" style="font-size: 1.2em;"></i>
                             </a>
+                            <span style="margin-left: 5px;">Eliminar</span>
                         </td>
                     `;
                     carritoBody.appendChild(fila);
@@ -87,7 +88,7 @@
                 return `$${precio.toLocaleString('es-CO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
             }
 
-            // Función para eliminar un producto del carrito
+            // Función para eliminar un producto del carrito solo se elimina del carrito.
             function eliminarProducto(index) {
                 if (confirm('¿Estás seguro que quieres eliminar este producto?')) {
                     carrito.splice(index, 1); // Eliminar el producto del arreglo

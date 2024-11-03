@@ -5,6 +5,7 @@
     font-family:  Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;} /* Titulo inicio de ventas*/
 
+
 .subtitulo{
   color: #51DEE9;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,7 +18,6 @@
     font-size: 17px;
    color: #51DEE9;}/* Diseño de olvidaste contraseña y crear cuenta*/
 
-   
   
  .desarrollado{
   font-size: 16px ;
@@ -54,7 +54,9 @@
 /*Registro de usuarios*/
   
   .custom-input{
-   height: 35px; }/* tamaño de alto de cuadriculas*/
+   height: 35px; 
+  }/* tamaño de alto de cuadriculas*/
+   
    
 /*
 .icono-opci{
@@ -110,21 +112,4 @@ font-family: Georgia, 'Times New Roman', Times, serif;}/* tamaño del bienvenido
  font-size: 30px; /* tamaño del menu desplegable*/
 }
 
-  
-/*en espera de revisar carrito de compra*/
-.product-price {
-  color: #b12704;
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-.carrito {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,15 +17,31 @@
         <br>
         <br>
         <!-- titulo --> 
-        <div class="container d-flex justify-content-sm-center align-items-center">
-        
-            <h1 class="titulo "style="margin-left: 170px;">Inicio de sesión</h1>
-            
+        <div class="container d-flex justify-content-center align-items-center" style="margin-right: 180px;">
+            <div class="row">
+                <div class="col-12 text-center"> <!-- Cambiar a text-center para centrar el texto -->
+                    <h1 class="titulo">Inicio de sesión</h1>
+                </div>
+            </div>
         </div>
+
+        
 
         <br>
         <br>
-        <form action="inicio.php" method= "POST">   <!-- etiquetapara conectar la interfaz con php-->
+        
+        <!-- 
+        Codigo que Inicia una sesión, verifica y muestra un mensaje de error de la sesión como una alerta. 
+        Luego, elimina el mensaje de la sesión para evitar que se muestre de nuevo.-->
+        <?php
+            session_start();
+            if (isset($_SESSION['error'])) {
+            echo '<div class="alert-danger text-danger text-center" role="alert">' . $_SESSION['error'] . '</div>';
+            unset($_SESSION['error']); // Limpiar el mensaje después de mostrarlo
+            }
+        ?>
+        <br>
+        <form action="inicio.php" method= "POST">   <!-- etiqueta para conectar la interfaz con php-->
 
             <!-- Container que tiene en su contenido el logotipo de la empresa y el formulario a ingresar-->
             <div class="container">
@@ -40,7 +57,7 @@
                             
                             
                         
-                        <input type="email" class="form-control custom-input" name="correoElectronico" placeholder="Correo electrónico" required> <!-- la palabra required hace que no deje inciar sesion sin no se pune el campo-->
+                        <input type="email" class="form-control custom-input" name="correoElectronico" id="email" placeholder="Correo electrónico" required> <!-- la palabra required hace que no deje inciar sesion sin no se pune el campo-->
                         <br>
                         <div class="input-group">
                             <input type="password" class="form-control " name="contraseña" id="password" placeholder="Contraseña" required>
@@ -48,6 +65,9 @@
                                   <i id="passwordIcon" class="bi bi-eye"></i>
                             </button>
                         </div>
+                       
+                       
+
                         <br>
                         <div class="d-flex justify-content-center">
                                     
@@ -154,6 +174,7 @@
     
       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>     
+        <script src="Javascript/in" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>     
     </body>
 
 </html>

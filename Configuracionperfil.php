@@ -16,10 +16,10 @@
     // Define la consulta SQL dependiendo del rol del usuario
     if ($rol == 'empleado') {
         // Si es un empleado, selecciona correo y celular de la tabla empleados
-        $query = "SELECT correo_empl AS correo, celular_empl AS celular FROM empleados WHERE id_empl = ?";
+        $query =  "SELECT nombre_empl AS nombre, correo_empl AS correo, celular_empl AS celular FROM empleados WHERE id_empl = ?";
     } else {
         // Si no es un empleado, selecciona correo y celular de la tabla clientes
-        $query = "SELECT correo_clie AS correo, celular_clie AS celular FROM clientes WHERE id_clie = ?";
+        $query = "SELECT nombre_clie AS nombre, correo_clie AS correo, celular_clie AS celular FROM clientes WHERE id_clie = ?";
     }
 
     // Prepara la consulta SQL para evitar inyecciones SQL
@@ -55,9 +55,9 @@
        <div class="container d-flex flex-column align-items-center">
            <h4 class="subtitulo">Configuracion de perfil</h4>
            <br><br>
-
-           
-           
+           <label for="nombre">Nombre del usuario</label><br>
+           <input type="nombre" name="nombre" class="form-control" style="width: 640px; height: 35px;" id="nombre" value="<?php echo htmlspecialchars($user['nombre']); ?>" required>
+           <br>
             <label for="correo">Correo electrónico</label><br>
             <input type="email" name="correo" class="form-control" style="width: 640px; height: 35px;" id="correo" value="<?php echo htmlspecialchars($user['correo']); ?>" required>
             <br>
